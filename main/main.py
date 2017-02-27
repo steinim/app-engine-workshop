@@ -1,5 +1,6 @@
 import logging
 import json
+import os
 
 from google.appengine.api import users, urlfetch, modules
 from flask import Flask
@@ -14,7 +15,8 @@ def index():
 
 @app.route('/hello-world/')
 def hello_world():
-    return 'Hello, World!'
+    current_user = users.get_current_user()
+    return "Hello {}. You are running your app on {}.".format(current_user, os.environ['SERVER_NAME']) 
 
 
 @app.route('/test-static/')
