@@ -492,6 +492,7 @@ But if you are done early, or just want to explore more of App Engine, here are 
 * Play around with the config file `app.yaml`. There are many options that have not been shown here. [See the documentation](https://cloud.google.com/appengine/docs/standard/python/config/appref).
 * Change scaling from automatic to manual or basic for some service - [more info about the scaling types](https://cloud.google.com/appengine/docs/standard/python/an-overview-of-app-engine#scaling_types_and_instance_classes) and [how to change](https://cloud.google.com/appengine/docs/standard/python/config/appref#scaling_elements).
 * Set up a project using Java. There is a quick start that get you started in the [documentation](https://cloud.google.com/appengine/docs/standard/java/quickstart).
+* Set up [Task Queues](https://cloud.google.com/appengine/docs/standard/python/taskqueue/) for longer running tasks.
 * [Storing persistent data](https://cloud.google.com/appengine/docs/standard/python/storage).
 * [Use memcache for caching](https://cloud.google.com/appengine/docs/standard/python/memcache/).
 * Set up services behind custom routes in your default service, using [dispatch.yaml](https://cloud.google.com/appengine/docs/standard/python/config/dispatchref).
